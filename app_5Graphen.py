@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from dash import Dash, dcc, html
 
 # 🔽 Ordnerpfad mit den CSV-Dateien
-folder_path = r"E:\Messdaten"
+folder_path = os.path.join(os.path.dirname(__file__), "Messdaten")
 
 # 🔽 Funktion: eine CSV-Datei laden und vorbereiten
 def load_sensor_data(file_path):
